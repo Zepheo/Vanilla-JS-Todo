@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanilla JS ToDo</title>
+  <link rel="stylesheet" type="text/css" href="./style/todo.css">
+  <script defer src="./js/todo.js"></script>
+</head>
+<body>
+  <section class="main">
+    <form
+      class="new-todo-item"
+      id="new-todo-item-form"
+    >
+      <legend class="new-todo-item-header">
+        Register New ToDo
+      </legend>
+      <p>
+        Title
+      </p>
+      <input
+        type="text"
+        class="new-todo-item-input"
+        id="title" 
+        name="title"
+        placeholder="Title..."
+        required
+      />
+      <p>
+        Description
+      </p>
+      <input
+        type="text"
+        class="new-todo-item-input"
+        id="description"
+        name="description"
+        placeholder="Description..."
+      />
+      <br>
+      <input
+        type="submit"
+        class="new-todo-item-addbtn btn"
+        id="new-todo-item-addbtn"
+        value="Add"
+      />
+    </form>
+    <ul class="todos" id="todos" />
+  </section>
+</body>
+
+</html>
